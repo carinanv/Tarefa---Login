@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+:root {
+    --cor-principal: white;
+    --cor-secundário: #CCB6FA;
+    --cor-sobre:#BCDEA5;
+    --cor-botao:#1f5ca1;
+    --cor-label: #0c1f35;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--cor-principal);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+
+    background-color: white;
+    width: 250px;
+    height: 515px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.450);
+
+    transition: width .3s, heigth .3s;
+    transition-timing-function: ease;
+    transform: translate(-50%, -50%);
+
+}
+
+section#login > div#imagem {
+    display: block;
+    background: #5f2c82 url('../sections/img2.jpg') no-repeat;
+    background-size: cover;
+    background-position: left bottom;
+    height: 200px;
+}
+
+section#login > div#imagem:hover {
+    
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
+
+div#imagem > h1 {
+    text-align: center;
+    font-weight: bolder;
+    padding-top: 15%;
+    margin-bottom: 10px;
+    color: var(--cor-secundário);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.493);
+    
+}
+
+div#imagem > p {
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 400;
+    color: var(--cor-secundário);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.493);
+}
+
+div.campo > label {
+    display: inline-block;
+    text-align: left;
+    font-size: 1em;
+    margin: 10px 0px;
+    color: var(--cor-label);
+
+}
+
+div.campo > input {
+    background-color: var(--cor-principal);
+    font-size: 1em;
+    width: calc(100% - 1px);
+    height: 100%;
+    border: 1px solid #00000054;
+    border-radius: 2px;
+    padding: 5px;
+    transform: translateY(-1px);
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.384);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+    border: none;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    font-weight: 700;
+    width: 100%;
+    height: 40px;
+    margin-top: 30px;
+    background-color: var(--cor-botao);
+    color: var(--cor-principal);
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.384);
+}
+
+form > input[type=submit]:hover {
+    background-color: var(--cor-sobre);
+    color: var(--cor-botao);
+    cursor: pointer;
+}

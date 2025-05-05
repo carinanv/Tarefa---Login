@@ -3,50 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo/style.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
     <title>Login</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <section>
-    <!-- Inicio Cabeçalho formulário -->
-    <header>
-        <!-- Img -->
-        <h1>Welcome Back !</h1>
-        <p>Sign in to continue</p>
-    </header>
-    <!-- Fim Cabeçalho formulário -->
-     <!-- Inicio divisória redonda com img -->
-    <div id="bola">
-     <!-- Fim divisória redonda com img  -->
-    </div> 
-    <!-- Inicio conteúdo principal -->
     <main>
-        <!-- Inicio formulário -->
-        <form>
-            <!-- Inicio div nome usuário -->
-            <div id="nome">
-                <label for="name">Nome</label>
-                <input type="text" required id="name">
+        <section id="login">
+            <div id="imagem">
+                <h1>Welcome Back!</h1>
+                <p>Sign in to continue</p>
+            <!-- imagem de fundo -->
+            </div id>
+        
+            <div id="imagem-redonda">
+            <!-- imagem -->
             </div>
-            <!-- Fim div nome usuário -->
+                <div id="formulario">
+                    <form action="login.php" method="post" autocomplete="on">
+                        <div class="campo">
+                            <label for="inome">Nome</label> <br>
+                            <input type="text" name="nome" id="inome" autocomplete="username" placeholder="escreva seu nome" maxlength="15" required><br>
+                        </div>
 
-            <!-- Inicio div Senha -->
-            <div id="pass">
-                <label for="pass">Password</label>
-                <input type="password" required id="name">
-                <select name="names" id="reserved-name">
-                <option value=""></option>
-                </select>
-            </div>
-            <!-- Fim div Senha -->
-            
-            <!-- Inicio botão -->
-            <input type="submit" value="Sign-in">
-            <!-- Final botão -->
-        </form>
-        <!-- Fim formulário -->
+                        <div class="campo">
+                         <label for="isenha">Senha</label><br>
+                            <input type="password" name="senha" id="isenha" autocomplete="current-password" placeholder="digite sua senha" minlength="8" maxlength="15" required><br>
+                        </div>
+
+                        <input type="submit" value="Entrar">
+                    </form>
+                </div>
+        </section>
     </main>
-    <!-- Fim conteúdo principal -->
-</section>
+   
 </body>
 </html>
