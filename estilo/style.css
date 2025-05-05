@@ -53,10 +53,6 @@ section#login > div#imagem {
     height: 200px;
 }
 
-section#login > div#imagem:hover {
-    
-}
-
 section#login > div#formulario {
     display: block;
     padding: 10px;
@@ -80,12 +76,31 @@ div#imagem > p {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.493);
 }
 
+section#login > div#imagem-redonda {
+    position: absolute;
+    top: 39%;
+    left: 20%;
+
+    display: block;
+    background: #0c1f35 url('../sections/img1.png') no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+
+    transform: translate(-42%, -52%);
+    
+}
+
 div.campo > label {
     display: inline-block;
     text-align: left;
     font-size: 1em;
     margin: 10px 0px;
     color: var(--cor-label);
+    padding-top: 20px;
 
 }
 
